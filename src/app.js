@@ -1,21 +1,13 @@
 import express from "express";
-import { Socket } from "socket.io"; 
+import { createServer } from "http";
+import { Server } from "socket.io";
 
-// App setup
-const PORT = 5000;
 const app = express();
-// const server = app.listen(PORT, function () {
-//   console.log(`Listening on port ${PORT}`);
-//   console.log(`http://localhost:${PORT}`);
-// });
+const httpServer = createServer(app);
+const io = new Server(httpServer, { /* options */ });
 
-// Static files
-app.use(express.static("public"));
-
-// Socket setup
-const io =new Socket(server);
-
-io.on("connection", function (socket) {
-  console.log("Made socket connection");
+io.on("connection", (socket) => {
+  // ...
 });
 
+httpServer.listen(3000);
