@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec node_modules/.bin/babel-node src/app.js"
   },
-  "repository": "https://github.com/Alwaz18/node-es6-template",
+  "repository": "https://github.com/alwaz-shahid/node-es6-template",
   "keywords": [
     "javascript",
     "node js",
@@ -18,7 +18,7 @@
   "author": "Alwaz18 alwazdev@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Alwaz18/my_package/issues"
+    "url": "https://github.com/alwaz-shahid/my_package/issues"
   },
   "homepage": "https://github.com/Alwaz18/my_package",
   "devDependencies": {
